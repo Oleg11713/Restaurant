@@ -15,14 +15,14 @@
   margin: 0;
 }
 
-.basic-info__blocks-with-info {
+.basic-info-collection {
   display: flex;
   justify-content: space-between;
   max-width: 1060px;
   width: 100%;
 }
 
-.block-with-info {
+.basic-info-collection__item {
   max-width: 500px;
   line-height: 25px;
   margin: 90px 20px 0 0;
@@ -49,12 +49,12 @@
     padding-right: 20px;
   }
 
-  .basic-info__blocks-with-info {
+  .basic-info-collection {
     flex-direction: column;
     align-items: center;
   }
 
-  .block-with-info {
+  .basic-info-collection__item {
     margin-right: 0;
   }
 }

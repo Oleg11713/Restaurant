@@ -27,13 +27,13 @@
   </head>
   <body>
     <header class="header">
-      <div class="navigation">
-        <nav class="toolbar">
-          <div class="toolbar__links">
-            <a class="toolbar__links_link" href="index.html">HOME</a>
-            <a class="toolbar__links_link" href="index.html">MENU</a>
-            <a class="toolbar__links_link" href="index.html">OUR STORY</a>
-            <a class="toolbar__links_link" href="index.html">CONTACT US</a>
+      <div class="header__toolbar">
+        <nav class="header-navigation">
+          <div class="header-navigation-links">
+            <a class="header-navigation-links__item" href="">HOME</a>
+            <a class="header-navigation-links__item" href="#menu">MENU</a>
+            <a class="header-navigation-links__item" href="#our-story">OUR STORY</a>
+            <a class="header-navigation-links__item" href="#contact-us">CONTACT US</a>
           </div>
           <div class="search-field">
             <form>
@@ -43,17 +43,17 @@
           </div>
         </nav>
       </div>
-      <div class="welcome">
-        <div class="welcome__info">
+      <div class="header__welcome">
+        <div class="welcome-info">
           <div class="logo">
             <a href="index.html"
               ><img src="./src/assets/images/Logo.png" alt="logo"
             /></a>
           </div>
-          <h1 class="welcome__info_title">Italian Food</h1>
-          <div class="welcome__info_subtitle">LOREMIPSUM DOLOR</div>
-          <button class="welcome__info_read-more-button">READ MORE</button>
-          <p class="welcome__info_body-text">
+          <h1 class="welcome-info__title">Italian Food</h1>
+          <div class="welcome-info__subtitle">LOREMIPSUM DOLOR</div>
+          <button class="welcome-info__read-more-button">READ MORE</button>
+          <p class="welcome-info__body-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             iusmod tempor incididunt ut labore et dolore magna.
           </p>
@@ -73,42 +73,42 @@
         </div>
       </div>
     </header>
-    <section class="menu">
+    <section id="menu" class="menu">
       <h2 class="menu__title">Lorem Ipsum Dolor</h2>
       <p class="menu__body-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia
         odio vitae vestibulum vestibulum.
       </p>
-      <div class="menu__collection">
-        <div class="collection__element">
+      <div class="menu-collection">
+        <div class="menu-collection__item">
           <div class="plate-image">
             <img src="src/assets/images/First-plate.png" alt="First plate" />
           </div>
-          <div class="element__info">
-            <h3 class="element__info_title">Lorem ipsum</h3>
-            <p class="element__info_body-text">
+          <div class="item-menu-info">
+            <h3 class="item-menu-info__title">Lorem ipsum</h3>
+            <p class="item-menu-info__body-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing...
             </p>
           </div>
         </div>
-        <div class="collection__element">
+        <div class="menu-collection__item">
           <div class="plate-image">
             <img src="src/assets/images/Second-plate.png" alt="Second plate" />
           </div>
-          <div class="element__info">
-            <h3 class="element__info_title">Lorem ipsum</h3>
-            <p class="element__info_body-text">
+          <div class="item-menu-info">
+            <h3 class="item-menu-info__title">Lorem ipsum</h3>
+            <p class="item-menu-info__body-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing...
             </p>
           </div>
         </div>
-        <div class="collection__element">
+        <div class="menu-collection__item">
           <div class="plate-image">
             <img src="src/assets/images/Third-plate.png" alt="Third plate" />
           </div>
-          <div class="element__info">
-            <h3 class="element__info_title">Lorem ipsum</h3>
-            <p class="element__info_body-text">
+          <div class="item-menu-info">
+            <h3 class="item-menu-info__title">Lorem ipsum</h3>
+            <p class="item-menu-info__body-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing...
             </p>
           </div>
@@ -116,16 +116,16 @@
       </div>
       <button class="show-more-button">SHOW MORE</button>
     </section>
-    <section class="basic-info">
+    <section id="our-story" class="basic-info">
       <h2 class="basic-info__title">Lorem Ipsum Dolor</h2>
-      <div class="basic-info__blocks-with-info">
-        <p class="block-with-info">
+      <div class="basic-info-collection">
+        <p class="basic-info-collection__item">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex quia voluptas sit aspernatur
         </p>
-        <p class="block-with-info">
+        <p class="basic-info-collection__item">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -173,42 +173,32 @@
         tempor incididunt ut labore et dolore
       </p>
       <div class="white-rectangle"></div>
-      <div class="big-pizza__images">
         <div class="two-leaves">
           <img src="src/assets/images/Second-leaves.png" alt="Two leaves" />
         </div>
         <div class="full-pizza">
-          <div class="piece-of-pizza">
-            <img
-              src="src/assets/images/Piece-of-pizza.png"
-              alt="Piece of pizza"
-            />
-          </div>
-          <div class="big-part-of-pizza">
-            <img src="src/assets/images/Big-pizza.png" alt="Big pizza" />
-          </div>
+          <img src="src/assets/images/Full-pizza.png" alt="Big pizza">
         </div>
-      </div>
     </section>
     <section class="additional-info">
-      <div class="collections-with-info">
-        <div class="element-with-info">
-          <h3 class="element-with-info__title">Lorem Ipsum</h3>
-          <p class="element-with-info__body-text">
+      <div class="additional-info-collection">
+        <div class="additional-info-collection__item">
+          <h3 class="item-additional-info__title">Lorem Ipsum</h3>
+          <p class="item-additional-info__body-text">
             Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit,
             tation omne ullamco laboris nisi ut aliqolore.
           </p>
         </div>
-        <div class="element-with-info">
-          <h3 class="element-with-info__title">Lorem Ipsum</h3>
-          <p class="element-with-info__body-text">
+        <div class="additional-info-collection__item">
+          <h3 class="item-additional-info__title">Lorem Ipsum</h3>
+          <p class="item-additional-info__body-text">
             Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit,
             tation omne ullamco laboris nisi ut aliqolore.
           </p>
         </div>
-        <div class="element-with-info">
-          <h3 class="element-with-info__title">Lorem Ipsum</h3>
-          <p class="element-with-info__body-text">
+        <div class="additional-info-collection__item">
+          <h3 class="item-additional-info__title">Lorem Ipsum</h3>
+          <p class="item-additional-info__body-text">
             Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit,
             tation omne ullamco laboris nisi ut aliqolore.
           </p>
@@ -228,7 +218,7 @@
         odio vitae vestibulum vestibulum.
       </p>
       <form class="email-subscription__form">
-        <input class="form__input" type="email" placeholder="Your Email" />
+        <input class="email-input" type="email" placeholder="Your Email" />
         <button class="subscribe-button" type="submit">SUBSCRIBE</button>
       </form>
       <div class="two-leaves">
@@ -236,14 +226,14 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="title-here-column footer__column">
-        <h3 class="footer__column_title">Title Here</h3>
-        <p class="footer__column_body-text">
+      <div class="footer-navigation title-here-column">
+        <h3 class="footer-navigation__title">Title Here</h3>
+        <p class="footer-navigation__body-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
           dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim
           enim.
         </p>
-        <nav class="social-media">
+        <nav id="contact-us" class="social-media">
           <a href="index.html" class="social-media__icon"
             ><img src="src/assets/images/Instagram.png" alt="Instagram" />
           </a>
@@ -258,32 +248,32 @@
           </a>
         </nav>
       </div>
-      <div class="about-column footer__column">
-        <h3 class="footer__column_title">About</h3>
-        <div class="footer__column_links">
-          <a href="index.html" class="column__links_link">History</a>
-          <a href="index.html" class="column__links_link">Our Team</a>
-          <a href="index.html" class="column__links_link">Brand Guidelines</a>
-          <a href="index.html" class="column__links_link">Terms & Condition</a>
-          <a href="index.html" class="column__links_link">Privacy Police</a>
+      <div class="footer-navigation about-column">
+        <h3 class="footer-navigation__title">About</h3>
+        <div class="footer-navigation-links">
+          <a href="index.html" class="footer-navigation-links__item">History</a>
+          <a href="index.html" class="footer-navigation-links__item">Our Team</a>
+          <a href="index.html" class="footer-navigation-links__item">Brand Guidelines</a>
+          <a href="index.html" class="footer-navigation-links__item">Terms & Condition</a>
+          <a href="index.html" class="footer-navigation-links__item">Privacy Police</a>
         </div>
       </div>
-      <div class="service-column footer__column">
-        <h3 class="footer__column_title">Services</h3>
-        <div class="footer__column_links">
-          <a href="index.html" class="column__links_link">How to Order</a>
-          <a href="index.html" class="column__links_link">Our Product</a>
-          <a href="index.html" class="column__links_link">Order Status</a>
-          <a href="index.html" class="column__links_link">Promo</a>
-          <a href="index.html" class="column__links_link">Payment Method</a>
+      <div class="footer-navigation service-column">
+        <h3 class="footer-navigation__title">Services</h3>
+        <div class="footer-navigation-links">
+          <a href="index.html" class="footer-navigation-links__item">How to Order</a>
+          <a href="index.html" class="footer-navigation-links__item">Our Product</a>
+          <a href="index.html" class="footer-navigation-links__item">Order Status</a>
+          <a href="index.html" class="footer-navigation-links__item">Promo</a>
+          <a href="index.html" class="footer-navigation-links__item">Payment Method</a>
         </div>
       </div>
-      <div class="other-column footer__column">
-        <h3 class="footer__column_title">Other</h3>
-        <div class="footer__column_links">
-          <a href="index.html" class="column__links_link">Contact Us</a>
-          <a href="index.html" class="column__links_link">Help</a>
-          <a href="index.html" class="column__links_link">Privacy</a>
+      <div class="footer-navigation other-column">
+        <h3 class="footer-navigation__title">Other</h3>
+        <div class="footer-navigation-links">
+          <a href="#contact-us" class="footer-navigation-links__item">Contact Us</a>
+          <a href="index.html" class="footer-navigation-links__item">Help</a>
+          <a href="index.html" class="footer-navigation-links__item">Privacy</a>
         </div>
       </div>
     </footer>

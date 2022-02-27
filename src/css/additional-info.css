@@ -7,19 +7,19 @@
   color: #3f3f3f;
 }
 
-.collections-with-info {
+.additional-info-collection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
 
-.element-with-info {
+.additional-info-collection__item {
   max-width: 335px;
   margin: 180px 10px 0;
 }
 
-.element-with-info__title {
+.item-additional-info__title {
   display: flex;
   justify-content: center;
   font-family: "Reey Regular", sans-serif;
@@ -29,7 +29,7 @@
   margin-bottom: 40px;
 }
 
-.element-with-info__body-text {
+.item-additional-info__body-text {
   font-size: 19px;
   margin: 0;
 }
@@ -56,13 +56,21 @@
     padding-left: 20px;
   }
 
-  .collections-with-info {
+  .additional-info-collection {
     justify-content: center;
   }
 
-  .element-with-info {
+  .additional-info-collection__item {
     margin-left: 45px;
     margin-right: 45px;
+  }
+}
+
+@media (max-width: 890px) {
+  .additional-info-collection__item {
+    max-width: 700px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -71,7 +79,7 @@
     margin-top: 150px;
   }
 
-  .element-with-info__title {
+  .item-additional-info__title {
     font-size: 30px;
     text-align: center;
   }
