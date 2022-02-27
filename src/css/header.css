@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Reey Regular";
+  src: url("../assets/Reey_Regular_400.otf");
+}
+
+.header {
+  background: url("../assets/images/Header-background.png");
+  background-size: cover;
+  padding: 46px 47px 189px 98px;
+  color: white;
+  position: relative;
+}
+
+.header__toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.header-navigation-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.header-navigation-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-navigation-links__item {
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.search-field form {
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+}
+
+.search-field input {
+  max-width: 185px;
+  padding: 15px 0 15px 15px;
+  border-radius: 42px;
+  border: 2px solid white;
+}
+
+.search-field button {
+  background: white;
+  border: none;
+  border-radius: 42px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+
+.search-field button:before {
+  cursor: pointer;
+  content: "\f002";
+  font-family: FontAwesome, serif;
+  font-size: 26px;
+  color: #324b4e;
+}
+
+.header__welcome {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 150px;
+}
+
+.welcome-info__title {
+  font-size: 91px;
+  margin-bottom: 104px;
+  font-family: "Reey Regular", sans-serif;
+  font-weight: normal;
+  margin-top: 34px;
+  text-align: center;
+}
+
+.welcome-info__subtitle {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 67px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.welcome-info__read-more-button {
+  font-weight: 800;
+  font-size: 25px;
+  color: #2e3034;
+
+  padding: 14px 0;
+  max-width: 220px;
+  border-radius: 42px;
+  border: none;
+  cursor: pointer;
+}
+
+.welcome-info__body-text {
+  font-size: 21px;
+  font-style: italic;
+
+  max-width: 485px;
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
+.welcome__images {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+.leaves {
+  max-width: 550px;
+  position: absolute;
+  right: 0;
+  bottom: -135px;
+  z-index: 1;
+}
+
+.main-plates {
+  position: relative;
+  max-width: 750px;
+}
+
+.main-plate {
+  max-width: 630px;
+}
+
+.soup {
+  max-width: 280px;
+  position: absolute;
+  left: -20%;
+  bottom: -30%;
+}
+
+@media (max-width: 1320px) {
+  .header__welcome {
+    flex-direction: column;
+  }
+
+  .welcome__images {
+    align-items: center;
+  }
+
+  .leaves {
+
+  }
+}
+
+@media (max-width: 788px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+
+  .header__toolbar {
+    justify-content: flex-start;
+  }
+
+  .header-navigation {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .search-field {
+    margin-top: 20px;
+  }
+
+  .header__welcome {
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .welcome-info__title {
+    font-size: 70px;
+  }
+
+  .leaves {
+    display: none;
+  }
+
+  .main-plates {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .soup {
+    position: static;
+    margin-right: 130px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header-navigation {
+    align-items: center;
+  }
+
+  .header-navigation-links {
+    justify-content: center;
+  }
+
+  .header-navigation-links__item {
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 20px 0;
+  }
+
+  .search-field {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .search-field form{
+    margin: 0;
+    max-width: 350px;
+  }
+
+  .search-field input{
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .welcome-info {
+    align-items: center;
+  }
+
+  .welcome-info__read-more-button {
+    width: 100%;
+  }
+
+  .welcome-info__title {
+    font-size: 50px;
+  }
+}
